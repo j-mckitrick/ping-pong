@@ -1,4 +1,6 @@
 class Player < ActiveRecord::Base
+  has_many :games
+  has_many :scores, through: :games
   validates :name, presence: true
   validates :hand, inclusion: { in: %w(left right),
                                 message: "%{value} is not a valid hand" }
