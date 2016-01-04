@@ -26,3 +26,23 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+  <p>
+    <%= label :player1 %>
+    <%= collection_select :player1_id, Player.all, :id, :name %>
+  </p>
+
+  <p>
+    <%= label :score %>
+    <%= text_field :player1_score %>
+  </p>
+
+  <p>
+    <%= label :player2 %>
+    <%= collection_select :player2_id, Player.all, :id, :name %>
+  </p>
+
+  <p>
+    <%= label :score %>
+    <%= text_field :player2_score %>
+  </p>
